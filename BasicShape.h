@@ -1,6 +1,22 @@
-#include <iostream>
+// Description: Assignment 5 Pure Abstract Base Class
+// Author: Katherine-Marie Gonzales
+// COMSC200 - 5001
+// March 11, 2019
+// Status: Complete
 
-int main()
+// BasicShape.h
+
+#ifndef BASICSHAPE_H
+#define BASICSHAPE_H
+
+class BasicShape
 {
-	std::cout << "Hello from AWS Cloud9!" << std::endl;
-}
+private:
+    double area;
+public: 
+    double getArea() const
+    { return area; }
+    virtual double calcArea() const;
+};
+
+#endif
