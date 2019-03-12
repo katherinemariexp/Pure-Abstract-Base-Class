@@ -16,7 +16,14 @@ private:
     long centerX;
     long centerY;
     double radius;
+    
 public:
+    Circle() : BasicShape()
+    {
+        centerX = 0;
+        centerY = 0;
+        radius = 0;
+    }
     Circle(long x, long y, double r) : BasicShape(x, y, r)
     {
         centerX = x;
@@ -26,8 +33,10 @@ public:
     
     long getCenterX() const
     {return centerX;}
+    
     long getCenterY() const
     {return centerY;}
+    
     virtual double calcArea() const;
 
 };
